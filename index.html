@@ -1,299 +1,160 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="manifest" href="manifest.json" />
-
-    <title>Aye Thu Sint - Resume (Software Engineer)</title>
-    <meta name="keywords" content="Resume, DevOps Engineer, John Doe, IT Professional" />
-    <meta name="description"
-        content="Hello, I'm John Doe. This is my latest resume, showcasing my experience and skills as a DevOps Engineer. Feel free to contact me. Thank you for visiting :).">
-
-    <link rel="stylesheet" href="css/resume.css?v=1.0.0" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900,600' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aye Thu Sint — Java Full Stack Developer</title>
+  <style>
+    :root{--accent:#0b76ef;--muted:#6b7280;--bg:#f7f9fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:1000px;margin:36px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.08)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:22px}
+    .sub{color:var(--muted);font-size:13px;margin-top:6px}
+    .contact{margin-left:auto;text-align:right;font-size:13px}
+    .pill{display:inline-block;background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;margin-left:6px}
+    section{margin-top:22px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .card{background:#fff}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f3f4f6;padding:6px 8px;border-radius:6px;font-size:13px;color:#111827}
+    .experience-item{margin-bottom:12px}
+    .project{border-left:3px solid var(--accent);padding:12px 14px;background:#fbfdff;border-radius:8px;margin-bottom:12px}
+    a{color:var(--accent);text-decoration:none}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr} .contact{text-align:left;margin-left:0}}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none}
+    pre{background:#0b1220;color:#e6f0ff;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+  </style>
 </head>
-
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="leftcontent-wrapper">
-                        <img src="img/aboutme.png" />
-                    </div>
-                    <div class="rightcontent-wrapper">
-                        <div class="experience-bubble"><img src="img/experience-bubble.png" /></div>
-                        <h1 class="hello">Hello, <small>I am</small></h1>
-                        <h1 class="name">Aye Thu Sint</h1>
-                        <h4>Software Engineer</h4>
-                        <div class="contact-wrapper">
-                            <div class="content"><a href="https://github.com/Ayethu-Sint/Ayethu-Sint.github.io" target="_blank"> <i
-                                        class="fa fa-laptop"></i><strong> https://github.com/Ayethu-Sint/Ayethu-Sint.github.io</strong></a></div>
-                            <div class="content"><a href="mailto:ayethusint@gmail.com"> <i class="fa fa-envelope"></i>
-                                    ayethusint@gmail.com</a></div>
-                            <div class="content"><i class="fa fa-mobile"></i>(+65) 85757958</div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
+  <div class="container">
+    <header>
+      <div class="avatar">AS</div>
+      <div>
+        <h1>AYE THU SINT <span class="pill">Java Full Stack Developer</span></h1>
+        <div class="sub">Expert in Spring Boot, Angular, REST APIs & Scalable System Design — 6+ years building enterprise systems</div>
+      </div>
+      <div class="contact">
+        <div>489 Upper E Coast Rd, Singapore, 466526</div>
+        <div>+65 8575 7958 | <a href="mailto:ayethusint@gmail.com">ayethusint@gmail.com</a></div>
+        <div><a href="#linkedin">LinkedIn</a> • <a href="#github">GitHub</a></div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <main>
+        <h2>Career Summary</h2>
+        <p>Versatile Java Full Stack Developer with 6+ years of success building scalable, high-performance applications across retail, logistics, and AI-driven domains. Expert in Java, Spring Boot, Angular and building reliable backend systems, API-first architectures, and metadata-driven search features using Python and ChromaDB.</p>
+
+        <h2>Professional Experience</h2>
+
+        <div class="experience-item">
+          <strong>Trusted Hub (Singapore)</strong> — Software Developer
+          <div class="sub">Jun 2024 – Present</div>
+          <ul>
+            <li>Architected backend systems using C#, .NET Framework and RESTful APIs for modular, reliable infrastructure.</li>
+            <li>Built logistics modules and document workflows supporting order lifecycle automation and validation logic.</li>
+            <li>Enhanced metadata indexing and query logic for high-speed database interactions (MSSQL).</li>
+          </ul>
+
+          <div class="project">
+            <strong>TGS (Trusted Generative Suite)</strong>
+            <div class="sub">AI-driven document management</div>
+            <p>Designed AI-enabled architecture for intelligent content recognition. Implemented advanced search using Python and ChromaDB, and integrated generative tools to automate classification and extraction workflows.</p>
+          </div>
+
+          <div class="project">
+            <strong>Rule Engine (SOAP API for Insurance)</strong>
+            <div class="sub">SOAP-based insurance eligibility & rule-checking service</div>
+            <p>Designed and implemented a Rule Engine SOAP API for insurance that evaluates eligibility and target attainment using policyholder data (age, smoking status, medical flags, etc.). The service exposes WSDL-based endpoints consumed by legacy systems and performs rule evaluation, returns detailed decision reasons, and supports configurable rule sets to match changing underwriting criteria.</p>
+          </div>
+
+          <div class="project">
+            <strong>Promotion Module (legacy)</strong>
+            <div class="sub">Java 7 — reusable rule-handling API</div>
+            <p>Previously designed as a reusable Java 7 API for defining and applying promotion rules across applications; later evolved into the Rule Engine for decision automation.</p>
+          </div>
+
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-
-                <!-- Working Experience //-->
-                <div class="content-section fadeInLeft">
-                    <div class="leftcontent-wrapper">
-                        <h4 class="content-title">
-                            Working <br />Experiences <br /><small>(9 Years Experiences)</small>
-                        </h4>
-                    </div>
-
-                    <div class="rightcontent-wrapper">
-                        <div class="devops-experiences">
-                            <h4><b>DevOps Engineering </b> - 5 years experiences </h4>
-                            <ul class="two-columns-list">
-                                <li>
-                                    <div class="years">2020 - Current</div>
-                                    <div class="company-name"><strong>DevOps Engineer</strong> at <a
-                                            href="https://example.com/">Example Corp</a></div>
-                                    <div class="clearfix"></div>
-                                </li>
-                                <li>
-                                    <div class="years">2018 - 2020<br /><small>(2 years - 3 months)</small></div>
-                                    <div class="company-name"><strong>Automation Specialist</strong> at <a
-                                            href="http://automationco.com">Automation Co</a> </div>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="it-experiences">
-                            <h4><b>IT Operations</b> - 3 years experiences</h4>
-                            <ul class="two-columns-list">
-                                <li>
-                                    <div class="years">2015 - 2018</div>
-                                    <div class="company-name"><strong>Systems Administrator</strong> at <a
-                                            href="https://techsolution.com/">Tech Solutions</a></div>
-                                    <div class="clearfix"></div>
-                                </li>
-                                <li>
-                                    <div class="years">2014 - 2015</div>
-                                    <div class="company-name"><strong>Network Support Specialist</strong> at <a
-                                            href="https://networkpros.com/">Network Pros</a></div>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- Skill set //-->
-                <div class="content-section page-break">
-                    <div class="leftcontent-wrapper">
-                        <h4 class="content-title">
-                            Skill set
-                        </h4>
-                    </div>
-
-                    <div class="rightcontent-wrapper">
-                        <p>
-                            &nbsp; &nbsp; &nbsp; I am a skilled DevOps engineer with expertise in automation,
-                            continuous integration, and cloud infrastructure management. I have hands-on experience
-                            with tools like Jenkins, Docker, Kubernetes, Ansible, and Terraform. Proficient in scripting
-                            languages such as Python and Bash.
-                        </p>
-                        <ul class="skill-metrics">
-                            <li>
-                                <label>Automation and Scripting</label>
-                                <div class="progress progress-info">
-                                    <div class="bar" style="width: 90%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <label>Continuous Integration/Continuous Deployment (CI/CD)</label>
-                                <div class="progress progress-info">
-                                    <div class="bar" style="width: 85%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <label>Containerization (Docker, Kubernetes)</label>
-                                <div class="progress progress-info">
-                                    <div class="bar" style="width: 88%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <label>Infrastructure as Code (Terraform, Ansible)</label>
-                                <div class="progress progress-info">
-                                    <div class="bar" style="width: 92%;"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <label>Cloud Platforms (AWS, Azure)</label>
-                                <div class="progress progress-info">
-                                    <div class="bar" style="width: 85%;"></div>
-                                </div>
-                            </li>
-                        </ul>
-                        <br />
-                        <h4>Projects I've Worked On</h4>
-                        <ul class="experience-list">
-                            <li>
-                                <a href="https://exampleproject1.com" target="_blank" class="img-wrapper">
-                                    <img src="img/leetdev.png" />
-                                </a>
-                                <a href="https://exampleproject1.com" target="_blank">Example Project 1</a>
-                            </li>
-                            <li>
-                                <a href="https://exampleproject2.com" target="_blank" class="img-wrapper">
-                                    <img src="img/coronahelpmm.png" />
-                                </a>
-                                <a href="https://exampleproject2.com" target="_blank">Example Project 2</a>
-                            </li>
-                            <li>
-                                <a href="https://exampleproject3.com" target="_blank" class="img-wrapper">
-                                    <img src="img/mmunicode.png" />
-                                </a>
-                                <a href="https://exampleproject3.com" target="_blank">Example Project 3</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- Languages //-->
-                <div class="content-section">
-                    <div class="leftcontent-wrapper">
-                        <h4 class="content-title">
-                            Languages
-                        </h4>
-                    </div>
-
-                    <div class="rightcontent-wrapper">
-                        <ul class="two-columns-list language-list">
-                            <li>
-                                <div class="pull-left language">English</div>
-                                <div class="pull-left language"><small>Read/Write</small> - <strong>Fluent</strong></div>
-                                <div class="pull-left language"><small>Speaking</small> - <strong>Advanced</strong></div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div class="pull-left language">Spanish</div>
-                                <div class="pull-left language"><small>Read/Write</small> - <strong>Basic</strong></div>
-                                <div class="pull-left language"><small>Speaking</small> - <strong>Conversational</strong></div>
-                                <div class="clearfix"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- Education //-->
-                <div class="content-section page-break">
-                    <div class="leftcontent-wrapper">
-                        <h4 class="content-title">
-                            Education
-                        </h4>
-                    </div>
-
-                    <div class="rightcontent-wrapper">
-                        <ul class="two-columns-list education">
-                            <li>
-                                <div class="years">2008 - 2012</div>
-                                <div class="company-name"><strong><i class="fa fa-graduation-cap"></i> Bachelor of
-                                        Science in Computer Science</strong></div>
-                                <div class="clearfix"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- Personal Information //-->
-                <div class="content-section">
-                    <div class="leftcontent-wrapper">
-                        <h4 class="content-title">
-                            Personal <br /> Information
-                        </h4>
-                    </div>
-
-                    <div class="rightcontent-wrapper">
-
-                        <ul class="two-columns-list personal-info-list">
-                            <li>
-                                <div>Date of Birth</div>
-                                <div><strong><u>15<sup>th</sup> Mar, 1995</u></strong></div>
-                                <div>Age</div>
-                                <div><strong><u>29 years</u></strong></div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div>Nationality</div>
-                                <div><strong><u>United States</u></strong></div>
-                                <div>Race</div>
-                                <div><strong><u>Caucasian</u></strong></div>
-                                <div class="clearfix"></div>
-                            </li>
-                            <li>
-                                <div>Martital Status</div>
-                                <div><strong><u>Single</u></strong></div>
-                                <div class="clearfix"></div>
-                            </li>
-                        </ul>
-                        <br>
-                        <p>
-                            &nbsp; &nbsp; &nbsp; I am a dedicated DevOps engineer passionate about optimizing
-                            development processes and improving deployment pipelines. In my previous roles, I played a
-                            key role in implementing automation, reducing manual efforts, and ensuring smooth
-                            application deployments. I am always eager to learn and adapt to new technologies in the
-                            ever-evolving DevOps landscape.
-                        </p>
-                        <p>
-                            &nbsp; &nbsp; &nbsp; In my free time, I contribute to open-source projects and participate
-                            in tech meetups. I believe in the power of collaboration and continuous improvement. Let's
-                            connect and discuss how we can enhance the efficiency of your IT operations!
-                        </p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- Contact Information //-->
-                <div class="content-section">
-                    <div class="leftcontent-wrapper">
-                        <h4 class="content-title">
-                            Contact Me
-                        </h4>
-                    </div>
-
-
-                    <div class="rightcontent-wrapper">
-                        <h3> Contact Me<small> with email or phone.</small></h3>
-                        <img src="img/resume-arrow.png" class="resume-arrow" />
-                        <img src="img/hand-drawing-circle.png" class="contact-circle" />
-                        <div class="salary-contact-wrapper">
-                            <div class="email"> &nbsp;<a href="mailto:thixpin@devktops.com"><i
-                                        class="fa fa-envelope"></i>thixpin@devktops.com</a></div>
-                            <div class="phone"><i class="fa fa-mobile"></i> +95 9 7962 79062</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="experience-item">
+          <strong>Core Value Myanmar Co., Ltd</strong> — Senior Software Developer
+          <div class="sub">Feb 2023 – Mar 2024</div>
+          <ul>
+            <li>Built a Rice Factory Process Management System using Spring Boot, Java Swing and MySQL to manage production, inventory and accounting workflows.</li>
+            <li>Automated routine tasks, improved reporting accuracy and integrated production with finance modules.</li>
+          </ul>
         </div>
-    </div>
-    <br /><br /><br /><br />
-    <br /><br /><br /><br />
+
+        <div class="experience-item">
+          <strong>Myanmar Information Technology Co., Ltd (MIT)</strong> — Software Developer
+          <div class="sub">Feb 2019 – Dec 2022</div>
+          <ul>
+            <li>Delivered enterprise POS (City POS) and F&B systems handling transactions, inventory, and high-volume sales with Java EE, AngularJS and MSSQL.</li>
+            <li>Built mobile-friendly apps and delivery platforms using Ionic, Flutter and Spring Boot.</li>
+          </ul>
+        </div>
+
+        <h2>Education</h2>
+        <div class="sub">B.C.Sc — University of Computer Studies, Monywa, Myanmar (2017)</div>
+
+        <h2>Certifications</h2>
+        <ul>
+          <li>Diploma in Professional Java Programming (IMCEITS) — B+</li>
+          <li>Certificate in Android Development — ACE Inspiration</li>
+        </ul>
+
+      </main>
+
+      <aside>
+        <div style="margin-bottom:18px">
+          <h3>Technical Skills</h3>
+          <div class="skills">
+            <span class="skill">Java</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">Spring Cloud</span>
+            <span class="skill">Spring Security</span>
+            <span class="skill">JPA / Hibernate</span>
+            <span class="skill">Angular</span>
+            <span class="skill">REST & SOAP</span>
+            <span class="skill">MSSQL / MySQL / PostgreSQL</span>
+            <span class="skill">Python / ChromaDB</span>
+            <span class="skill">Docker</span>
+            <span class="skill">AWS / Azure</span>
+            <span class="skill">Redis / MongoDB</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom:18px">
+          <h3>Selected Projects</h3>
+          <div class="project">
+            <strong>Document Management & Search</strong>
+            <div class="sub">Python + ChromaDB</div>
+            <p>Integrated AI/metadata-driven search to speed document retrieval and automated classification pipelines for enterprise workflows.</p>
+          </div>
+
+          <div class="project">
+            <strong>Retail & POS Platforms</strong>
+            <div class="sub">Java EE / Spring Boot</div>
+            <p>Developed POS systems for City Mart and multiple F&B solutions handling transactions, inventory and reporting.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <p><a id="github" href="#">GitHub Repository</a></p>
+          <p><a id="linkedin" href="#">LinkedIn Profile</a></p>
+          <p><a class="btn" href="#">Download CV (PDF)</a></p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © Aye Thu Sint — Built for GitHub Pages. Edit <code>index.html</code> to customise. 
+    </footer>
+  </div>
 </body>
-
 </html>
