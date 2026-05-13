@@ -3,158 +3,536 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aye Thu Sint — Java Full Stack Developer</title>
+  <title>Aye Thu Sint — Senior Software Engineer</title>
+
   <style>
-    :root{--accent:#0b76ef;--muted:#6b7280;--bg:#f7f9fb}
-    *{box-sizing:border-box}
-    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;background:var(--bg);color:#0f172a}
-    .container{max-width:1000px;margin:36px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.08)}
-    header{display:flex;gap:20px;align-items:center}
-    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
-    h1{margin:0;font-size:22px}
-    .sub{color:var(--muted);font-size:13px;margin-top:6px}
-    .contact{margin-left:auto;text-align:right;font-size:13px}
-    .pill{display:inline-block;background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;margin-left:6px}
-    section{margin-top:22px}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
-    .card{background:#fff}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:#f3f4f6;padding:6px 8px;border-radius:6px;font-size:13px;color:#111827}
-    .experience-item{margin-bottom:12px}
-    .project{border-left:3px solid var(--accent);padding:12px 14px;background:#fbfdff;border-radius:8px;margin-bottom:12px}
-    a{color:var(--accent);text-decoration:none}
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:880px){.grid{grid-template-columns:1fr} .contact{text-align:left;margin-left:0}}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none}
-    pre{background:#0b1220;color:#e6f0ff;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+    :root{
+      --accent:#0b76ef;
+      --muted:#6b7280;
+      --bg:#f7f9fb;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      line-height:1.6;
+      margin:0;
+      background:var(--bg);
+      color:#0f172a;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:36px auto;
+      padding:28px;
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(2,6,23,.08);
+    }
+
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .avatar{
+      width:92px;
+      height:92px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#7dd3fc);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:700;
+      font-size:24px;
+    }
+
+    h1{
+      margin:0;
+      font-size:28px;
+    }
+
+    .sub{
+      color:var(--muted);
+      font-size:14px;
+      margin-top:6px;
+    }
+
+    .contact{
+      margin-left:auto;
+      text-align:right;
+      font-size:14px;
+    }
+
+    .pill{
+      display:inline-block;
+      background:#eef2ff;
+      color:var(--accent);
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:600;
+      margin-left:6px;
+      font-size:14px;
+    }
+
+    section{
+      margin-top:28px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:28px;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+
+    .skill{
+      background:#f3f4f6;
+      padding:6px 10px;
+      border-radius:6px;
+      font-size:13px;
+      color:#111827;
+    }
+
+    .experience-item{
+      margin-bottom:24px;
+    }
+
+    .project{
+      border-left:3px solid var(--accent);
+      padding:12px 14px;
+      background:#fbfdff;
+      border-radius:8px;
+      margin-top:12px;
+      margin-bottom:12px;
+    }
+
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+
+    footer{
+      margin-top:28px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:8px;
+      background:var(--accent);
+      color:#fff;
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    @media (max-width:880px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .contact{
+        text-align:left;
+        margin-left:0;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <div class="container">
+
     <header>
+
       <div class="avatar">AS</div>
+
       <div>
-        <h1>AYE THU SINT <span class="pill">Java Full Stack Developer</span></h1>
-        <div class="sub">Expert in Spring Boot, Angular, REST APIs & Scalable System Design — 6+ years building enterprise systems</div>
+        <h1>
+          AYE THU SINT
+          <span class="pill">Senior Software Engineer</span>
+        </h1>
+
+        <div class="sub">
+          Java • Spring Boot • Angular • .NET • Microservices • Enterprise Systems
+        </div>
       </div>
+
       <div class="contact">
-        <div>489 Upper E Coast Rd, Singapore, 466526</div>
-        <div>+65 8575 7958 | <a href="mailto:ayethusint@gmail.com">ayethusint@gmail.com</a></div>
-        <div><a href="#linkedin">LinkedIn</a> • <a href="#github">GitHub</a></div>
+        <div>Singapore</div>
+
+        <div>
+          +65 8575 7958 |
+          <a href="mailto:ayethusint@gmail.com">
+            ayethusint@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/aye-thu-sint/" target="_blank">
+            LinkedIn
+          </a>
+
+          •
+
+          <a href="https://github.com/ayethusint-ats" target="_blank">
+            GitHub
+          </a>
+        </div>
       </div>
+
     </header>
 
     <section class="grid">
+
       <main>
+
         <h2>Career Summary</h2>
-        <p>Versatile Java Full Stack Developer with 6+ years of success building scalable, high-performance applications across retail, logistics, and AI-driven domains. Expert in Java, Spring Boot, Angular and building reliable backend systems, API-first architectures, and metadata-driven search features using Python and ChromaDB.</p>
+
+        <p>
+          Senior Software Engineer with over 7 years of professional experience
+          delivering enterprise-grade POS systems, ERP platforms, document management systems,
+          AI-driven solutions, and logistics applications.
+          Strong expertise in Java (7/8/17+), Spring Boot, Spring Framework,
+          .NET Framework 4.8, .NET Core 8, AngularJS, Angular 18,
+          RESTful APIs, microservices architecture, and database optimization.
+          Hands-on experience with Docker, Redis, OCR workflows,
+          metadata search, enterprise integrations, and online/offline data migration.
+        </p>
 
         <h2>Professional Experience</h2>
 
         <div class="experience-item">
-          <strong>Trusted Hub (Singapore)</strong> — Software Developer
-          <div class="sub">Jun 2024 – Present</div>
+
+          <strong>Trusted Hub Pte Ltd (Singapore)</strong>
+          — Software Developer
+
+          <div class="sub">
+            Jun 2024 – Present
+          </div>
+
           <ul>
-            <li>Architected backend systems using C#, .NET Framework and RESTful APIs for modular, reliable infrastructure.</li>
-            <li>Built logistics modules and document workflows supporting order lifecycle automation and validation logic.</li>
-            <li>Enhanced metadata indexing and query logic for high-speed database interactions (MSSQL).</li>
+            <li>Developed and maintained Trusted DataVerse (TDV) using .NET Framework 4.8.</li>
+
+            <li>Integrated Singpass login for secure authentication and identity verification.</li>
+
+            <li>Designed customer hierarchy and authority management systems.</li>
+
+            <li>Built logistics management and full order-tracking workflows.</li>
+
+            <li>Integrated OCR, image segmentation, and metadata tagging pipelines.</li>
+
+            <li>Developed scheduler services and enterprise document management solutions.</li>
+
+            <li>Implemented Google-style enterprise search using SQL Server Full-Text Search.</li>
+
+            <li>Developed Logistics Management frontend using Angular 18.</li>
+
+            <li>Built backend services using .NET Core 8.</li>
+
+            <li>Implemented Docker containerization and Redis caching.</li>
+
+            <li>Performed online and offline data migration for enterprise systems and databases.</li>
           </ul>
 
           <div class="project">
-            <strong>TGS (Trusted Generative Suite)</strong>
-            <div class="sub">AI-driven document management</div>
-            <p>Designed AI-enabled architecture for intelligent content recognition. Implemented advanced search using Python and ChromaDB, and integrated generative tools to automate classification and extraction workflows.</p>
+
+            <strong>Trusted Generative Suite (TGS)</strong>
+
+            <div class="sub">
+              AI-driven document management platform
+            </div>
+
+            <p>
+              Designed AI-driven architecture for document classification,
+              metadata extraction, intelligent routing,
+              and enterprise search using Python and ChromaDB.
+            </p>
+
           </div>
 
           <div class="project">
-            <strong>Rule Engine (SOAP API for Insurance)</strong>
-            <div class="sub">SOAP-based insurance eligibility & rule-checking service</div>
-            <p>Designed and implemented a Rule Engine SOAP API for insurance that evaluates eligibility and target attainment using policyholder data (age, smoking status, medical flags, etc.). The service exposes WSDL-based endpoints consumed by legacy systems and performs rule evaluation, returns detailed decision reasons, and supports configurable rule sets to match changing underwriting criteria.</p>
+
+            <strong>Rule Engine</strong>
+
+            <div class="sub">
+              Java 7 + SOAP API
+            </div>
+
+            <p>
+              Designed and implemented a reusable Rule Engine
+              using Java 7 and SOAP APIs to support configurable business rules
+              across enterprise applications.
+            </p>
+
           </div>
 
           <div class="project">
-            <strong>Promotion Module (legacy)</strong>
-            <div class="sub">Java 7 — reusable rule-handling API</div>
-            <p>Previously designed as a reusable Java 7 API for defining and applying promotion rules across applications; later evolved into the Rule Engine for decision automation.</p>
+
+            <strong>PHS Singapore (Parkway Healthcare System)</strong>
+
+            <div class="sub">
+              Document Management Solution
+            </div>
+
+            <p>
+              Developed document management modules with scanning support
+              and secure shareable document links
+              to improve operational accessibility.
+            </p>
+
           </div>
 
         </div>
 
         <div class="experience-item">
-          <strong>Core Value Myanmar Co., Ltd</strong> — Senior Software Developer
-          <div class="sub">Feb 2023 – Mar 2024</div>
+
+          <strong>Core Value Myanmar Co., Ltd</strong>
+          — Senior Software Developer
+
+          <div class="sub">
+            Feb 2023 – Mar 2024
+          </div>
+
           <ul>
-            <li>Built a Rice Factory Process Management System using Spring Boot, Java Swing and MySQL to manage production, inventory and accounting workflows.</li>
-            <li>Automated routine tasks, improved reporting accuracy and integrated production with finance modules.</li>
+
+            <li>
+              Developed Rice Factory ERP System supporting production,
+              inventory, and accounting workflows.
+            </li>
+
+            <li>
+              Built microservices using Java 17,
+              Spring Boot, and JPA.
+            </li>
+
+            <li>
+              Designed and optimized MySQL database schemas.
+            </li>
+
+            <li>
+              Developed operator applications using Java Swing.
+            </li>
+
+            <li>
+              Implemented production calculations
+              for rice outputs and pricing.
+            </li>
+
+            <li>
+              Performed online and offline data migration
+              between legacy and new systems.
+            </li>
+
           </ul>
+
         </div>
 
         <div class="experience-item">
-          <strong>Myanmar Information Technology Co., Ltd (MIT)</strong> — Software Developer
-          <div class="sub">Feb 2019 – Dec 2022</div>
+
+          <strong>Myanmar Information Technology Co., Ltd (MIT)</strong>
+          — Software Developer → Senior Software Developer
+
+          <div class="sub">
+            Feb 2019 – Dec 2022
+          </div>
+
           <ul>
-            <li>Delivered enterprise POS (City POS) and F&B systems handling transactions, inventory, and high-volume sales with Java EE, AngularJS and MSSQL.</li>
-            <li>Built mobile-friendly apps and delivery platforms using Ionic, Flutter and Spring Boot.</li>
+
+            <li>
+              Developed enterprise-grade POS systems
+              for supermarkets and restaurants.
+            </li>
+
+            <li>
+              Implemented barcode scanning,
+              multi-payment systems,
+              and customer display screens.
+            </li>
+
+            <li>
+              Built JasperReports reporting solutions
+              for sales and business reporting.
+            </li>
+
+            <li>
+              Developed Spring Framework backend systems
+              and RESTful APIs.
+            </li>
+
+            <li>
+              Built mobile and delivery applications
+              using Ionic and Flutter.
+            </li>
+
+            <li>
+              Implemented socket-based real-time communication
+              for restaurant systems.
+            </li>
+
+            <li>
+              Supported deployment, maintenance,
+              and production troubleshooting.
+            </li>
+
+            <li>
+              Performed database migration
+              and production data synchronization activities.
+            </li>
+
           </ul>
+
         </div>
 
         <h2>Education</h2>
-        <div class="sub">B.C.Sc — University of Computer Studies, Monywa, Myanmar (2017)</div>
+
+        <div class="sub">
+          Bachelor of Computer Science (B.C.Sc)
+          — University of Computer Studies, Monywa, Myanmar
+        </div>
 
         <h2>Certifications</h2>
+
         <ul>
-          <li>Diploma in Professional Java Programming (IMCEITS) — B+</li>
-          <li>Certificate in Android Development — ACE Inspiration</li>
+
+          <li>
+            Diploma in Professional Java Programming (IMCEITS)
+          </li>
+
+          <li>
+            Certificate in Android Development — ACE Inspiration
+          </li>
+
         </ul>
 
       </main>
 
       <aside>
-        <div style="margin-bottom:18px">
+
+        <div style="margin-bottom:24px;">
+
           <h3>Technical Skills</h3>
+
           <div class="skills">
-            <span class="skill">Java</span>
+
+            <span class="skill">Java 7/8/17+</span>
+            <span class="skill">Spring Framework</span>
             <span class="skill">Spring Boot</span>
-            <span class="skill">Spring Cloud</span>
-            <span class="skill">Spring Security</span>
+            <span class="skill">Spring WebFlux</span>
             <span class="skill">JPA / Hibernate</span>
-            <span class="skill">Angular</span>
-            <span class="skill">REST & SOAP</span>
-            <span class="skill">MSSQL / MySQL / PostgreSQL</span>
-            <span class="skill">Python / ChromaDB</span>
+            <span class="skill">.NET Framework 4.8</span>
+            <span class="skill">.NET Core 8</span>
+            <span class="skill">AngularJS</span>
+            <span class="skill">Angular 18</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">SOAP APIs</span>
             <span class="skill">Docker</span>
-            <span class="skill">AWS / Azure</span>
-            <span class="skill">Redis / MongoDB</span>
+            <span class="skill">Redis</span>
+            <span class="skill">MS SQL Server</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Flutter</span>
+            <span class="skill">Ionic</span>
+            <span class="skill">Python</span>
+            <span class="skill">ChromaDB</span>
+            <span class="skill">GitHub Actions</span>
+            <span class="skill">Jenkins</span>
+            <span class="skill">AWS</span>
+
           </div>
+
         </div>
 
-        <div style="margin-bottom:18px">
+        <div style="margin-bottom:24px;">
+
           <h3>Selected Projects</h3>
+
           <div class="project">
-            <strong>Document Management & Search</strong>
-            <div class="sub">Python + ChromaDB</div>
-            <p>Integrated AI/metadata-driven search to speed document retrieval and automated classification pipelines for enterprise workflows.</p>
+
+            <strong>Enterprise Document Management</strong>
+
+            <div class="sub">
+              .NET + Angular + OCR
+            </div>
+
+            <p>
+              Developed enterprise document workflows,
+              OCR integration,
+              metadata tagging,
+              and secure document sharing systems.
+            </p>
+
           </div>
 
           <div class="project">
+
             <strong>Retail & POS Platforms</strong>
-            <div class="sub">Java EE / Spring Boot</div>
-            <p>Developed POS systems for City Mart and multiple F&B solutions handling transactions, inventory and reporting.</p>
+
+            <div class="sub">
+              Java EE / Spring Boot
+            </div>
+
+            <p>
+              Developed POS systems for supermarkets,
+              restaurants, and F&B businesses
+              supporting transactions, inventory,
+              reporting, and payment workflows.
+            </p>
+
           </div>
+
         </div>
 
         <div>
+
           <h3>Quick Links</h3>
-          <p><a id="github" href="#">GitHub Repository</a></p>
-          <p><a id="linkedin" href="#">LinkedIn Profile</a></p>
-          <p><a class="btn" href="#">Download CV (PDF)</a></p>
+
+          <p>
+            <a
+              href="https://github.com/ayethusint-ats"
+              target="_blank">
+              GitHub Repository
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="https://www.linkedin.com/in/aye-thu-sint/"
+              target="_blank">
+              LinkedIn Profile
+            </a>
+          </p>
+
+          <p>
+            <a class="btn" href="#">
+              Download CV (PDF)
+            </a>
+          </p>
+
         </div>
+
       </aside>
+
     </section>
 
     <footer>
-      © Aye Thu Sint — Built for GitHub Pages. Edit <code>index.html</code> to customise. 
+      © Aye Thu Sint — Portfolio Resume Website
     </footer>
+
   </div>
+
 </body>
 </html>
